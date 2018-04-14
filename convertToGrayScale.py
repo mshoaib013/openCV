@@ -17,7 +17,7 @@ i=0
 for filename in filenames:
 	if filename[len(filename)-3:]=='jpg':
 		print (filename)
-		img = cv2.imread('t.jpg',0)
+		img = cv2.imread(filename,0)
 		cv2.imwrite(filename,img)
 		print ('Done')
 		# i=i+1
